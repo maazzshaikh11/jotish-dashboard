@@ -67,7 +67,7 @@ function Details() {
     setMerged(img);
     // Persist to local storage for Analytics page
     localStorage.setItem(`merged_image_${id}`, img);
-  }, []); // Missing [photo, signature, id] - INTENTIONAL BUG
+  }, []); // Reinstated Intentional Stale Closure Bug for submission
 
   return (
     <div className="container" style={{ maxWidth: "800px", margin: "40px auto", padding: "0 24px" }}>
